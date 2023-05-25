@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: #F1FAFF;
+}
+/*titulo de principal*/
+h1{
+    color: #3a4d71;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: -50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+/*Subtitulo de la parte posterior*/
+h2{
+    color: #3a4d71;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: auto;
+}
+
+/*caracteristicas de las tarjetas*/
+.container__card{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card__father{
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card__father:hover .card{
+    transform: rotateY(180deg);
+}
+
+
+.card{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+.card__front{
+    background-size: cover;
+    background-position: center;
+    font-size: black;
+    background-color: #c9e1ea;
+}
+
+
+.card__front,
+.card__back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+
+.imagen__card{
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+
+.card__back{
+    transform: rotateY(180deg);
+    background: #c9e1ea;
+}
+
+/*contenido de la tarjeta frontal*/
+
+.body__card_front{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: translateZ(60px);
+}
+
+/*contenido de la tarjeta posterior*/
+
+.body__card_back{
+    padding: 40px;
+    text-align: center;
+    transform: translateZ(60px);
+}
+
+.body__card_back p{
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: justify;
+    color: #3a4d71;
+}
+
+
+
+
+
+
+
