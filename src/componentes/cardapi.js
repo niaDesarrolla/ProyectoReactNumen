@@ -73,3 +73,4 @@ const CardApi = ({ cityData, loadingData, showData, }) => {  //esto es un destru
     export default CardApi;
 
     //cambios a;adidos 
+//agregué un comentario 
