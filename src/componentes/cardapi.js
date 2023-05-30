@@ -69,5 +69,5 @@ const CardApi = ({ cityData, loadingData, showData, }) => {  //esto es un destru
         </div>
       ); 
     };
-    
+    //agregué comentario
     export default CardApi;
