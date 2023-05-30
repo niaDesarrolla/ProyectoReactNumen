@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Cabecera from './componentes/Cabecera';
-import WeatherApp from './componentes/watherapi';
+import WeatherApp from './componentes/weatherapi';
 import Tarjeta from './componentes/tarjetas';
 
 function App() {
