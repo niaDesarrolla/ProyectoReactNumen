@@ -1,9 +1,9 @@
 import React from 'react';
-import '../hojas-de-estilo/CardApi.css';
+import '../hojas-estilos/CardApi.css';
 import Spinner from './spinner';
 import cielonubes from '../img/cielonubes.jpg';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
+// import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/js/bootstrap.js';
 
 const CardApi = ({ cityData, loadingData, showData, }) => {  //esto es un destructuring para acceder a las propiedades de mi objeto
    

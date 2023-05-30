@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CardApi from './cardsapi';
+import CardApi from '../componentes/cardapi';
 
 const WeatherApp = () => {
   const apiKey = 'f70f771f8fd64f27822214051231305';

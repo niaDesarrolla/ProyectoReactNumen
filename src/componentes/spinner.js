@@ -1,6 +1,5 @@
-
 import React from 'react';
-import '../hojas-de-estilo/spinner.css';
+import '../hojas-estilos/spinner.css';
 const Spinner = () => {
     return(
         <div className="lds-ripple">

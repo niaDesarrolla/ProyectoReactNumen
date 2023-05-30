@@ -1,6 +1,6 @@
 import React from 'react';
-import '../estilos/tarjetas.css';
-import 'react-card-flip';
+import '../hojas-estilos/tarjetas.css';
+/* import 'react-card-flip'; */
 
 
 function Tarjeta(props) {
@@ -9,7 +9,7 @@ function Tarjeta(props) {
                 <div className="card">
                     <div className="card__front">
                      <img className= 'imagen__card'
-                          src= {require (`../imagenes/${props.imagen}`)}
+                        //   src= {require (`../imagenes/${props.imagen}`)}
                           alt={props.altImagen}/>
                         <div className="body__card_front">
                             <h1>{props.titulo}</h1>
@@ -28,4 +28,4 @@ function Tarjeta(props) {
 );
 }
 
-export default Tarjeta
+export default Tarjeta;
