@@ -1,23 +1,22 @@
 import React from 'react';
 import './App.css';
 import Cabecera from './componentes/Cabecera';
-import WeatherApp from './componentes/weatherapi';
+import WeatherApp from './componentes/Weatherapi';
 import Tarjeta from './componentes/tarjetas';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+
+        <Cabecera />
+        
+          <WeatherApp />
        
-       <Cabecera/>
 
+          <Tarjeta />
        
 
-       <WeatherApp/>
-
-
-       <Tarjeta/>
-       
       </header>
     </div>
   );
