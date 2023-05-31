@@ -9,7 +9,7 @@ function Tarjeta(props) {
                 <div className="card">
                     <div className="card__front">
                      <img className= 'imagen__card'
-                        //   src= {require (`../imagenes/${props.imagen}`)}
+                        //   src= {require (`../img/${props.imagen}`)}
                           alt={props.altImagen}/>
                         <div className="body__card_front">
                             <h1>{props.titulo}</h1>
