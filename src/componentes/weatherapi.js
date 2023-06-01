@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CardApi from './cardapi';
 import Barrabuscar from './buscar.js';
+import axios from 'axios';
 
 const WeatherApp = () => {
 
@@ -16,11 +17,12 @@ const WeatherApp = () => {
     setLoading(true); //// Se establece el estado de carga a true
     const apiUrl = urlWeather + loc + urlCity; // Se construye la URL de la API
     try {
-      const response = await fetch(apiUrl); // Se realiza la petición a la API
-      if (!response.ok) {
+      const response = await axios(apiUrl); // Se realiza la petición a la API
+      console.log(response);
+      if (response.status !== 200) {
         throw new Error('Error en la respuesta de la API');
       }
-      const weatherData = await response.json();  // Se obtiene la respuesta en formato JSON
+      const weatherData = await axios('http://localhost:3000/data');  // Se obtiene la respuesta de la base de datos
       console.log(weatherData);
       const cityData = {  // Se extraen los datos relevantes de la respuesta
         name: weatherData.location.name,
@@ -32,6 +34,7 @@ const WeatherApp = () => {
         precip_mm: weatherData.current.precip_mm,
         feelslike_c:  weatherData.current.feelslike_c,
         icon: weatherData.current.condition.icon,
+        cloud: weatherData.current.cloud,
         localtime: weatherData.location.localtime,
       };
       setCityData(cityData); // Se actualiza el estado con los datos de la ciudad
@@ -44,10 +47,8 @@ const WeatherApp = () => {
     }
   };
   useEffect(() => {
-    if (cityData !== null) {// Cuando cityData cambia y no es null
-    getLocation(''); //Se llama a la función getLocation para obtener los datos de la ubicación inicial
-    }
-  }, []);
+     getLocation(); //Se llama a la función getLocation para obtener los datos de la ubicación inicial
+    }, []);
 
     
   return (
