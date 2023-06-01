@@ -32,6 +32,7 @@ const WeatherApp = () => {
         precip_mm: weatherData.current.precip_mm,
         feelslike_c:  weatherData.current.feelslike_c,
         icon: weatherData.current.condition.icon,
+        cloud:weatherData.current.cloud,
         localtime: weatherData.location.localtime,
       };
       setCityData(cityData); // Se actualiza el estado con los datos de la ciudad

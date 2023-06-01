@@ -1,27 +1,43 @@
-.cardtitle{
-    position: absolute;
-    padding: 50px;
-}
-
-.card-date{
-    position: absolute;
-    padding-left: 20px;
-    margin-top: 60px;
-}
-
-.card-temp{
-    position: absolute;
-    padding-left: 20px;
-    margin-top: 260px;
-    font-size: 50px;
-}
 
 .card-icon{
-    position: absolute;
-    padding-left: 20px;
-    margin-top: 300px;
+    flex: 0 0 auto;    /* evita que el icono crezca en ancho */
+      margin-right: 20px;  /* Agrega un margen derecho para separarlo del contenido */
+      height: 100%; 
+   }
    
-}
-
-/* cabio, cambio */
-
+   
+   .card-icon img{
+      height: 100%;  
+      object-fit: cover; 
+      width: 60px;
+    } 
+   
+    .card{
+       display: flex;
+        max-width: 60%; 
+       align-items: flex-start;
+       height: 1000px;
+       
+     }
+   .card-title{
+       position: absolute;
+       padding: 20px;
+   }
+   .card-date{
+       position: absolute;
+       padding-left: 20px;
+       margin-top: 60px;
+   }
+   .card-temp{
+       position: absolute;
+       padding-left: 20px;
+       margin-top: 260px;
+       font-size: 50px;
+   }
+   
+   .card-desc{
+       position: absolute;
+       padding-left: 20px;
+       margin-top: 320px;
+     } 
+     
