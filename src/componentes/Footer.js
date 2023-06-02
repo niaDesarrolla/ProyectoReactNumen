@@ -38,14 +38,14 @@ function Footer() {
                         <Link to="https://www.instagram.com">
                         <a href="https://www.instagram.com" target="_blank"><i className="bi bi-instagram"></i></a>
                         </Link>
-                        <Link to="/">
-                        <a href="#"><i className="bi bi-facebook"></i></a>
+                        <Link to="https://facebook.com/">
+                        <a href="https://facebook.com/" target="_blank"><i className="bi bi-facebook"></i></a>
                         </Link>
-                        <Link to="/">
-                        <a href="#"><i className="bi bi-linkedin"></i></a>
+                        <Link to="https://www.linkedin.com/">
+                        <a href="https://www.linkedin.com/" target="_blank"><i className="bi bi-linkedin"></i></a>
                         </Link>
-                        <Link to="/">
-                        <a href="#"><i className="bi bi-twitter"></i></a>
+                        <Link to="https://twitter.com/">
+                        <a href="https://twitter.com/" target="_blank"><i className="bi bi-twitter"></i></a>
                         </Link>
                     </div>
                 </div>
@@ -68,4 +68,5 @@ function Footer() {
 }
 
 export default Footer
+
 
