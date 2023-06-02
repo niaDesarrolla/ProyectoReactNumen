@@ -29,3 +29,5 @@ const Noticias = () => {
     </div>
   );
 };
+
+export default Noticias;
