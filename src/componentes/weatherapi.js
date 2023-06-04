@@ -22,8 +22,8 @@ const WeatherApp = () => {
       if (response.status !== 200) {
         throw new Error('Error en la respuesta de la API');
       }
-      const weatherData = await axios('http://localhost:3000/data');  // Se obtiene la respuesta de la base de datos
-      console.log(weatherData);
+      const weatherData = await response.data;  // Se obtiene la respuesta de la base de datos
+
       const cityData = {  // Se extraen los datos relevantes de la respuesta
         name: weatherData.location.name,
         country: weatherData.location.country,
@@ -32,33 +32,54 @@ const WeatherApp = () => {
         humidity: weatherData.current.humidity,
         condition: weatherData.current.condition.text,
         precip_mm: weatherData.current.precip_mm,
-        feelslike_c:  weatherData.current.feelslike_c,
+        feelslike_c: weatherData.current.feelslike_c,
         icon: weatherData.current.condition.icon,
         cloud: weatherData.current.cloud,
-        localtime: weatherData.location.localtime,
+
       };
-      setCityData(cityData); // Se actualiza el estado con los datos de la ciudad
-      setLoading(false); // Se establece el estado de carga a false
-      setShow(true); // Se muestra la información en la interfaz
+
+      console.log(weatherData);
+      setCityData(cityData);
+      setLoading(false);
+      setShow(true);
     } catch (error) {
       console.log(error);
       setLoading(false);
       setShow(false);
+
     }
   };
-  useEffect(() => {
-     getLocation(); //Se llama a la función getLocation para obtener los datos de la ubicación inicial
-    }, []);
+
+    //LLAMADA A BASE DE DATOS DE JSON-SERVER 
+    const updateCityData = async () => {
+      try {
+        const resCityData = await axios('http://localhost:3000/data');
+        const newCityData = resCityData.data;
+        setCityData(newCityData);
+        setLoading(false);
+        setShow(true);
+      } catch (error) {
+        console.log(error);
+        setLoading(false);
+        setShow(false);
+      }
+    };
+  
+   useEffect(() => {
+    updateCityData();
+  }, []);
+
+
 
     
   return (
     <div>
        <Barrabuscar newLocation={getLocation}/> 
       
-      {show && <CardApi cityData={cityData} loadingData={loading} 
-showData={show} />}
+      {show && <CardApi cityData={cityData} loadingData={loading} showData={show} />}
     </div>
   );
+
 };
 export default WeatherApp;
 
