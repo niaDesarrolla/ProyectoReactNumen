@@ -1,4 +1,4 @@
-.cardtitle{
+.card-title{
     position: absolute;
     padding: 50px;
 }
@@ -20,8 +20,12 @@
     position: absolute;
     padding-left: 20px;
     margin-top: 300px;
-   
+    overflow: hidden;
 }
 
 /* cabio, cambio */
 
+.card-icon contenedor-imagen{
+    width: 50%;
+    height: 100%;
+}
