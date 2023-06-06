@@ -15,7 +15,7 @@ function App() {
           <WeatherApp />
        
    
-    <div className= 'container__card'>
+    <div className= 'container__ficha'>
       <h1>INFORMACION UTIL</h1>
       <Tarjeta
       imagen= 'rayosuv.jpg'
@@ -26,7 +26,6 @@ function App() {
         imagen= 'invierno.jpg'
         altImagen= 'fotos de invierno'
         titulo='Bajas Temperaturas'
-        subtitulo= 'Del 21 de Junio al 23 de Septiembre'
         resumen='Recomendaciones: Evita la entrada de aire extremadamente frío en los pulmones. Protéjase rostro y cabeza. Si tienes que ir a la montaña, elije vestimenta que proteja del viento y resista el agua, evita prendas que puedan afectar a la circulación, no camines sobre hielo, procura no mojarse y elije alimentos ricos en hidratos de carbono.' />
       <Tarjeta
       imagen= 'precipitacion.jpg'
