@@ -57,7 +57,7 @@ function CardApi({ cityData, loadingData, showData, }) {
 
 
                     alt="Weather Icon"
-                    className="img-fluid rounded-start" /> </p>
+                    className="img-fluid rounded float-start" /> </p>
 
 
           </div>
