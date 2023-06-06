@@ -3,7 +3,7 @@ import React from 'react';
 import Spinner from './spinner';
 //import cielonubes from '../img/cielonubes.jpg';
 //import 'bootstrap/dist/css/bootstrap.css';
-//mport 'bootstrap/dist/js/bootstrap.js';
+//import 'bootstrap/dist/js/bootstrap.js';
 
 function CardApi({ cityData, loadingData, showData, }) {
 
@@ -46,7 +46,7 @@ function CardApi({ cityData, loadingData, showData, }) {
                             : './imagenes/cielonubes.png'}
 
                    
-                    className="img-fluid rounded-start"
+                    className="img-fluid rounded float-start"
                     alt="Weather Icon" />
                   
                 </p>
@@ -98,3 +98,4 @@ function CardApi({ cityData, loadingData, showData, }) {
 }
    
     export default CardApi;
+/* hola soy yo */
