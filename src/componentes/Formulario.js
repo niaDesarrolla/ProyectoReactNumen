@@ -25,7 +25,7 @@ const Formulario = () => {
             </div>
             <div className='form-control'>
                 <label>Ciudad</label>
-                <select>
+                <select name='Ciudad' {...register('Ciudad')}>
                     <option value="SEL">Seleccionar</option>
                     <option value="BA">Buenos Aires</option>
                     <option value="BAC">Ciudad Autónoma de Buenos Aires</option>
@@ -62,4 +62,4 @@ const Formulario = () => {
   )
 }
 
-export default Formulario
+export default Formulario;
