@@ -4,6 +4,9 @@ import Cabecera from './componentes/Cabecera';
 import WeatherApp from './componentes/weatherapi';
 import Tarjeta from './componentes/tarjetas';
 import Acercade from './componentes/Testimonios';
+//import Footer from './componentes/Footer';
+import Formulario from './componentes/Formulario';
+
 
 function App() {
   return (
@@ -38,6 +41,10 @@ function App() {
         
 
     <Acercade/>
+    <Formulario/>
+    {/* <Footer/> */}
+     
+     
    
       </header>
 
@@ -45,6 +52,6 @@ function App() {
 
   );
 }
-  {/* hola soy yo  */}
+  
 
 export default App;
