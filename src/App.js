@@ -43,6 +43,6 @@ function App() {
 
   );
 }
-  {/* hola soy yo  */}
+  
 
 export default App;
