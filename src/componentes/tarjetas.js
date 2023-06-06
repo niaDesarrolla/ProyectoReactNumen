@@ -5,20 +5,19 @@ import '../hojas-estilos/tarjetas.css';
 
 function Tarjeta(props) {
     return(
-           <div className="card__father">
-                <div className="card">
-                    <div className="card__front">
-                     <img className= 'imagen__card'
-                       src= {require (`../img/${props.imagen}`)}
+           <div className="ficha__father">
+                <div className="ficha">
+                    <div className="ficha__front">
+                     <img className= 'imagen__ficha'
+                          src= {require (`../img/${props.imagen}`)}
                           alt={props.altImagen}/>
-                        <div className="body__card_front">
+                        <div className="body__ficha_front">
                             <h1>{props.titulo}</h1>
                         </div>
                         </div>
-                    <div className="card__back">
-                        <div className='body__card_back'>
+                    <div className="ficha__back">
+                        <div className='body__ficha_back'>
                             <h2>{props.titulo}</h2>
-                            <p>{props.subtitulo}</p>
                             <p>{props.resumen}</p>
                         </div>
                 </div>
@@ -28,4 +27,4 @@ function Tarjeta(props) {
 );
 }
 
-export default Tarjeta;
+export default Tarjeta

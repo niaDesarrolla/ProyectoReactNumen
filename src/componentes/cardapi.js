@@ -45,11 +45,19 @@ function CardApi({ cityData, loadingData, showData, }) {
                             ? './imagenes/nieve.png'
                             : './imagenes/cielonubes.png'}
 
+
                    
                     className="img-fluid rounded float-start"
                     alt="Weather Icon" />
                   
                 </p>
+
+
+
+
+                    alt="Weather Icon"
+                    className="img-fluid rounded float-start" /> </p>
+
 
           </div>
 
