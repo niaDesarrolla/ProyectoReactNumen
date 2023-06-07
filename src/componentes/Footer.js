@@ -9,11 +9,27 @@ function Footer() {
     return (
         <footer>
         <div className="container_footer">
+
+
             <div className="box_footer">
+
                 <div className="logo">
                     <img className=""
                      src={require("../img/logo1.png")}
                      alt="logo-f"/>
+
+                </div>
+                <div className="descargas">
+                    <h2>Descargate la App</h2>
+                    <Link to="https://play.google.com/store/">
+                        <a href="https://play.google.com/store/" target="_blank"  rel="noreferrer" ><i className="bi bi-google-play">Google Play</i></a>
+                        </Link>
+                        <Link to="https://apps.apple.com/">
+                        <a href="https://apps.apple.com/" target="_blank"  rel="noreferrer" ><i className="bi bi-apple">App Store</i></a>
+                        </Link>
+                </div>
+            
+
                 </div>
                 <div className="descargas">
                     <h2>Descargate la App</h2>
@@ -25,6 +41,7 @@ function Footer() {
                         </Link>
                 </div>
                 </div>
+
             <div className="box__footer">
                 <h2>Redes Sociales</h2>
                 <Link to="https://www.instagram.com">
@@ -52,12 +69,18 @@ function Footer() {
         <div className="box__copyright">
             <hr/>
             <p><b>Copyright © 2021 - Todos los Derechos Reservados</b></p>
+
+
             
+
         </div>
      </footer>
     )
 
 }
+
+
+
 
 export default Footer
 
