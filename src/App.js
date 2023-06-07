@@ -4,6 +4,11 @@ import Cabecera from './componentes/Cabecera';
 import WeatherApp from './componentes/weatherapi';
 import Tarjeta from './componentes/tarjetas';
 
+import Noticias from './componentes/Noticias';
+import micarrusel from './componentes/micarrusel';
+import Modal from './componentes/modal';
+
+
 import Footer from './componentes/Footer'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -14,13 +19,25 @@ import Formulario from './componentes/Formulario';
 
 
 
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Cabecera />
 
+
+
+
+
+    <div>
+      <micarrusel />
+    </div>
+
+
+          <WeatherApp />
         <WeatherApp />
+
        
       <div className= 'container__ficha'>
       <h1>INFORMACION UTIL</h1>
