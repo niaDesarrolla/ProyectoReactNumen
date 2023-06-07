@@ -1,8 +1,9 @@
 import React from 'react';
-import 'componentes./micarrusel.css';
-import imagen1 from './img/1.png';
-import imagen2 from './img/2.png';
-import imagen3 from './img/3.jpg';
+import '../hojas-estilos/micarrusel.css';
+
+import imagen1 from '../img/1.png';
+import imagen2 from '../img/2.png';
+import imagen3 from '../img/3.png';
 
 
 const imagenes = [

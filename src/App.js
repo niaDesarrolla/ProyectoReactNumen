@@ -4,6 +4,8 @@ import Cabecera from './componentes/Cabecera';
 import WeatherApp from './componentes/weatherapi';
 import Tarjeta from './componentes/tarjetas';
 import Noticias from './componentes/Noticias';
+import micarrusel from './componentes/micarrusel';
+import Modal from './componentes/modal';
 
 function App() {
   return (
@@ -11,7 +13,15 @@ function App() {
       <header className="App-header">
 
         <Cabecera />
-        
+
+
+
+
+    <div>
+      <micarrusel />
+    </div>
+
+
           <WeatherApp />
        
    
