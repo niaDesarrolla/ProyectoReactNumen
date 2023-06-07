@@ -14,7 +14,7 @@ const Cabecera = () => {
     <header className="Cabecera">
       <h1 className="Cabecera-h1">
         <a href="#" className="Cabecera-a">
-          Home
+          Sky Alert
         </a>
       </h1>
 
@@ -31,7 +31,6 @@ const Cabecera = () => {
             <li className="Cabecera-li"><a href="#" className="Cabecera-a">Inicio</a></li>
             <li className="Cabecera-li"><a href="#" className="Cabecera-a">Sobre nosotros</a></li>
             <li className="Cabecera-li"><a href="#" className="Cabecera-a">Noticias</a></li>
-            <li className="Cabecera-li"><a href="#" className="Cabecera-a">Contacto</a></li>
           </ul>
         </nav>
 

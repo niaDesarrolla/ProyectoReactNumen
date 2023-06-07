@@ -1,36 +1,47 @@
 .Cabecera{
     width: 100%;
-    background-color:lightblue;
-    padding: 2em;
+    background:#a698c5;
+    padding: 1em;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    font-weight: bold;
-}
-
-/*.Cabecera-h1{
+    font-weight:lighter;
+    font-family: sans-serif;
+    position: relative;
     
 }
 
-.Cabecera-a{}
+.Cabecera-h1{
+    font-weight:lighter;
+}
 
-*/
+
+.Cabecera-h1:hover {
+    transform:scale(1.5);
+    transition: 1s;
+}
+
+.Cabecera-a{
+    text-decoration: none;
+}
+
 .Cabecera-button{
     display: none;
     cursor: pointer;
 }
 
+.Cabecera-ul li:hover{
+    transform:scale(1.2);
+    transition: .5s;
+    text-decoration: underline;
+}
+
 .Cabecera-svg{
     width: 2em;
     height: 2em;
-    fill:rgb(192, 86, 192);
 }
 
-/*
-.Cabecera-nav{
-}
-*/
 .Cabecera-ul{
     display: flex;
     flex-flow: row nowrap;
