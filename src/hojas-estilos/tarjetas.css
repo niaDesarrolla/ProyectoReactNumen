@@ -5,9 +5,9 @@
     font-family: 'Lato', sans-serif;
 }
 
-body{
+/* body{
     background: #F1FAFF;
-}
+} */
 /*titulo de principal*/
 h1{
     color: #3a4d71;
@@ -28,7 +28,7 @@ h2{
 }
 
 /*caracteristicas de las tarjetas*/
-.container__card{
+.container__ficha{
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
@@ -39,17 +39,17 @@ h2{
     text-align: center;
 }
 
-.card__father{
+.ficha__father{
     margin: 20px;
     perspective: 1000px;
 }
 
-.card__father:hover .card{
+.ficha__father:hover .ficha{
     transform: rotateY(180deg);
 }
 
 
-.card{
+.ficha{
     width: 350px;
     height: 400px;
     position: relative;
@@ -57,7 +57,7 @@ h2{
     transition: all 600ms;
 }
 
-.card__front{
+.ficha__front{
     background-size: cover;
     background-position: center;
     font-size: black;
@@ -65,8 +65,8 @@ h2{
 }
 
 
-.card__front,
-.card__back{
+.ficha__front,
+.ficha__back{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -77,21 +77,21 @@ h2{
     border-radius: 20px;
 }
 
-.imagen__card{
+.imagen__ficha{
     width: 350px;
     height: 300px;
     border-radius: 20px;
     transform-style: preserve-3d;
 }
 
-.card__back{
+.ficha__back{
     transform: rotateY(180deg);
     background: #c9e1ea;
 }
 
 /*contenido de la tarjeta frontal*/
 
-.body__card_front{
+.body__ficha_front{
     width: 100%;
     height: 50%;
     text-align: center;
@@ -105,13 +105,13 @@ h2{
 
 /*contenido de la tarjeta posterior*/
 
-.body__card_back{
+.body__ficha_back{
     padding: 40px;
     text-align: center;
     transform: translateZ(60px);
 }
 
-.body__card_back p{
+.body__ficha_back p{
     margin-top: 30px;
     font-size: 15px;
     text-align: justify;

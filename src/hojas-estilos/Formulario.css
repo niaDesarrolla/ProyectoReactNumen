@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    background: #eff4f4;
+    
+  
+  }
+  .contenedor {  
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #3a4d71;
+    border-radius: 2px;  
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+  }
+
+  .contenedor-form {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 470px;
+    background: linear-gradient(150deg,#b1a5c9, #eff4f4,#9fb8d9);
+    border-radius: 30px #c6c6c6;
+
+  }
+  h2 {
+    text-align: center;
+    margin: 30px;
+    font-weight: -700;  
+  }
+  #form-react {
+    padding: 30px 20px;  
+  }
+  .form-control {    
+    margin-bottom: 7px;
+    padding-bottom: 20px;
+    position: relative;
+    padding: 0 40px;
+  }
+  .form-control label {
+    display: inline-block;
+    margin-bottom: 7px;
+    font:weight 200px
+  }
+  .form-control input {
+    border:2px solid #3a4d71;
+    background-color: #fdfafa;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;    
+  }
+  .form-control, input:focus {
+    outline: none;
+  }
+  .form-react button {
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #eff4f4;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #3a4d71;
+    border-radius: 25px;
+    
+
+  }
+  .form-react button:hover {
+    background-color: #9fb8d9;
+  }
+  .fail {
+    color: #e70404;
+  }
