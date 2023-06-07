@@ -1,0 +1,26 @@
+.micarrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .micarrusel img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .micarrusel button {
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .micarrusel button:hover {
+    background-color: #aaa;
+  }
+  

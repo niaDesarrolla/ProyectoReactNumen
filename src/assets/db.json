@@ -1,0 +1,55 @@
+{
+  
+    "data": {
+      "city": {
+        "name": "miami"
+      },
+      "current": {
+        "cloud": 75,
+        "condition": {
+          "text": "Partly cloudy",
+          "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png",
+          "code": 1003
+        },
+        "feelslike_c": 27.6,
+        "feelslike_f": 81.7,
+        "gust_kph": 16.2,
+        "gust_mph": 10.1,
+        "humidity": 79,
+        "is_day": 0,
+        "last_updated": "2023-05-31 23:15",
+        "last_updated_epoch": 1685589300,
+        "precip_in": 0.04,
+        "precip_mm": 1,
+        "pressure_in": 29.89,
+        "pressure_mb": 1012,
+        "temp_c": 26.1,
+        "temp_f": 79,
+        "uv": 1,
+        "vis_km": 16,
+        "vis_miles": 9,
+        "wind_degree": 10,
+        "wind_dir": "N",
+        "wind_kph": 6.1,
+        "wind_mph": 3.8
+      },
+      "location": {
+        "country": "United States of America",
+        "lat": 25.77,
+        "localtime": "2023-05-31 23:18",
+        "localtime_epoch": 1685589492,
+        "lon": -80.19,
+        "name": "Miami",
+        "region": "Florida",
+        "tz_id": "America/New_York"
+      }
+    }
+  }
+ 
+  
+  
+  
+  
+  
+  
+  
