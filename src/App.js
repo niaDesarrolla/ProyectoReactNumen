@@ -5,7 +5,7 @@ import WeatherApp from './componentes/weatherapi';
 import Tarjeta from './componentes/tarjetas';
 
 import Footer from './componentes/Footer'
-import {BrowserRouter as Router,} from "react-router-dom"
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
