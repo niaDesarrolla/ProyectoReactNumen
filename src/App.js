@@ -45,10 +45,9 @@ function App() {
 
     <Formulario/>
     
-    <Router>
+ 
     <Footer/>
-    </Router>
-       
+   
    </header>
 
   </div>

@@ -1,14 +1,13 @@
 import React from "react";
-import '../hojas-estilos/Footer.css';
-
+import '../hojas-estilos/footer.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
 
 function Footer() {
     return (
-        
-            <><><div className="container_footer">
+
+        <><><div className="container_footer">
 
 
             <div className="box_footer">
@@ -21,40 +20,22 @@ function Footer() {
                 </div>
                 <div className="descargas">
                     <h2>Descargate la App</h2>
-
                     <a href="https://play.google.com/store/" target="_blank" rel="noreferrer"><i className="bi bi-google-play">Google Play</i></a>
-
-
                     <a href="https://apps.apple.com/" target="_blank" rel="noreferrer"><i className="bi bi-apple">App Store</i></a>
-
                 </div>
-
-
             </div>
             <div className="descargas">
                 <h2>Descargate la App</h2>
-
                 <a href="https://play.google.com/store/" target="_blank" rel="noreferrer"><i className="bi bi-google-play">Google Play</i></a>
-
-
                 <a href="https://apps.apple.com/" target="_blank" rel="noreferrer"><i className="bi bi-apple">App Store</i></a>
-
             </div>
         </div>
             <div className="box__footer">
                 <h2>Redes Sociales</h2>
-
                 <a href="https://www.instagram.com" target="_blank" rel="noreferrer"><i className="bi bi-instagram"></i>Instagram</a>
-
-
                 <a href="https://facebook.com/" target="_blank" rel="noreferrer"><i className="bi bi-facebook"></i>Facebook</a>
-
-
                 <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i>LinkedIn</a>
-
-
                 <a href="https://twitter.com/" target="_blank" rel="noreferrer"><i className="bi bi-twitter"></i>Twitter</a>
-
             </div>
             <div className="box__footer">
                 <h2>Contacto</h2>
@@ -66,9 +47,7 @@ function Footer() {
             </div></><div className="box__copyright">
                 <hr />
                 <p><b>Copyright © 2021 - Todos los Derechos Reservados</b></p>
-
             </div></>
-     
     );
 
 }
