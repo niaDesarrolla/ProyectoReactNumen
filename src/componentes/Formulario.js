@@ -22,7 +22,7 @@ const Formulario = () => {
           <form onSubmit={ handleSubmit(customSubmit) } className='form-react'>
               <p className='form-control'>
                   <label>Nombre</label>
-                  <input type="text" {...register('Nombre',{ 
+                  <input type="text" {...register('Nombre',{
                       required:true,
                   })} />
                   {errors.Nombre?.type === 'required' && <small className='fail'>El campo no puede estar vacío</small>}

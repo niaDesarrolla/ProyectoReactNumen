@@ -83,6 +83,6 @@ function CardApi({ cityData, loadingData, showData, }) {
 
     </div>
   );
-}
+                  }
    
     export default CardApi;
