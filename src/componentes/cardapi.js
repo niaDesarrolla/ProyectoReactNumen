@@ -20,17 +20,16 @@ function CardApi({ cityData, loadingData, showData, }) {
   return (
     <div className="mt-5">
       {showData === true && (
-        <div className="container">
-          <div className="card mb-3 mx-auto bg-dark text-light">
+        <div className="containerapi">
+          <div className="card mb-3 mx-auto text-light">
             <div className="row g-0">
-              <div className="col-md-4">
-           
-                <p className='card-title'>{cityData.name}</p>
-                <p className='card-date'>{cityData.date}</p>
-                <p className='card-temp'>{cityData.temp_c}°C</p>
-                {/* <p className="card-desc"><img src={icon} alt="icon"/>{condition}</p> */}
+              <div className="col-md-7">
+              <p className='card-titleapi'>{cityData.name}</p>
+                <p className='card-dateapi'>{cityData.date} </p>
+                <p className='card-tempapi'>{cityData.temp_c}°C</p>
+                <p className="card-conditonapi "><img src={icon} alt="icon"/>{condition}</p> 
                
-                <p className='contenedor-imagen'>
+                <p className='contenedor-imagenapi'>
                   {cityData?.current?.condition?.text.icon}
 
                   <img
@@ -59,8 +58,8 @@ function CardApi({ cityData, loadingData, showData, }) {
 
           </div>
 
-              <div className="col-md-8">
-                <div className="card-body text-start mt-2">
+              <div className="col-md-4">
+                <div className="card-body text-start mt-2 text-dark">
                   <p>País: {country}</p>
                   <p>Región: {region}</p>
                   <p>Temperatura: {temp_c}°C</p>
@@ -71,30 +70,13 @@ function CardApi({ cityData, loadingData, showData, }) {
                 </div>
               </div>
              
-              <hr/>  
- 
-                 <div className="row mt-4">
-                     <div className="col">
-                          <p>{cityData.localdate}h</p>
-                          <p className="description"><img src={icon} alt="icon"/>{condition}</p>
-                          <p className="temp">{temp_c}ºC</p>
-                      </div>
-                      <div className="col">
-                          <p>{cityData.localdate}h</p>
-                          <p className="description"><img src={icon} alt="icon"/>{condition}</p>
-                          <p className="temp">{temp_c}ºC</p>
-                      </div>
-                      <div className="col">
-                          <p>{cityData.localdate}h</p>
-                          <p className="description"><img src={icon} alt="icon"/>{condition}</p>
-                          <p className="temp">{temp_c}ºC</p>
-                      </div>
+             
                                          
                   </div>
           </div>
         </div>
 
-    </div>
+   
         )
                     }
       {!showData && <p className='text-light'>sin datos</p>}
@@ -104,5 +86,3 @@ function CardApi({ cityData, loadingData, showData, }) {
 }
    
     export default CardApi;
-
-   /*  ultima actualizacion */
