@@ -3,10 +3,8 @@ import './App.css';
 import Cabecera from './componentes/Cabecera';
 import WeatherApp from './componentes/weatherapi';
 import Tarjeta from './componentes/tarjetas';
-
-import Noticias from './componentes/Noticias';
-import micarrusel from './componentes/micarrusel';
-import Modal from './componentes/modal';
+import './componentes/micarrusel';
+import './componentes/modal';
 
 
 import Footer from './componentes/Footer'
@@ -22,6 +20,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 
 import Acercade from './componentes/Testimonios';
 import Formulario from './componentes/Formulario';
+import Micarrusel from './componentes/micarrusel';
 
 
 
@@ -37,7 +36,7 @@ function App() {
 
 
     <div>
-      <micarrusel />
+      <Micarrusel/>
     </div>
 
 
