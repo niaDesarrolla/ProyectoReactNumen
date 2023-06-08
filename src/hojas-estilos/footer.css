@@ -1,56 +1,43 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    text-decoration: none;
-}
+
 
 footer {
     width: 100%;
-    padding: 50px 0px;
+padding: 5px 0px;
     background-color: #3a4d71;
     -webkit-mask-image: url(../img/footer-background.png);
     mask-image: url(../img/footer-background.png) ;
     mask-size: cover;
+    
 }
 
 .container_footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .box__footer {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 15px;
 }
 
 .box_footer .logo img{
-    width: 150px;
-}
-
-.box_footer .terminos{
-    max-width: 350px;
-    margin-top: 20px;
-    font-weight: 500;
-    color: #7a7a7a;
-    font-size: 18px;
+width: 180px;
 }
 
 .box__footer h2{
-    margin-bottom: 30px;
-    color: #7a7a7a;
+    margin-bottom: 50px;
+    color: #0e0101;
     font-weight: 700;
 }
 
 .box__footer a{
     margin-top: 10px;
-    color: #7a7a7a;
+    color: #0e0101;
     font-weight: 600;
 }
 
@@ -60,12 +47,8 @@ footer {
 }
 
 /*tamaño iconos*/
-.box__footer a .fa-brands{
+.box__footer a .bi{
     font-size: 30px;
-}
-
-.box__footer a .fa-solid{
-    font-size: 25px;
 }
 
 /*copy*/
@@ -78,12 +61,12 @@ footer {
 
 .box__copyright p{
     margin-top: 20px;
-    color: #464545;
+    color: #0e0101;
 }
 
 /*linea copy*/
 .box__copyright hr{
-    border: none;
-    height: 1px;
-    border-color: #7a7a7a;
+   
+    height: 3px;
+    border-color: #0e0101;
 }
