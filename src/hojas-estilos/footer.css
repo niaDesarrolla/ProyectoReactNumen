@@ -24,13 +24,6 @@ footer {
     margin-top: 100px;
 }
 
-.logo img {
-    margin-top: 100px;
-
-
-}
- 
-
 .box__footer {
     display: flex;
     flex-direction: column;
@@ -38,26 +31,26 @@ footer {
 }
 
 .box_footer .logo img{
-    width: 70px;
+    width: 150px;
 }
 
 .box_footer .terminos{
     max-width: 350px;
     margin-top: 20px;
     font-weight: 500;
-    color:black;
+    color: #7a7a7a;
     font-size: 18px;
 }
 
 .box__footer h2{
     margin-bottom: 30px;
-    color: black;
+    color: #7a7a7a;
     font-weight: 700;
 }
 
 .box__footer a{
     margin-top: 10px;
-    color: black;
+    color: #7a7a7a;
     font-weight: 600;
 }
 
