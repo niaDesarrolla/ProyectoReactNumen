@@ -1,7 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 
-const Formulario = () => {
+ const Formulario = () => {
   const { register, handleSubmit } = useForm() 
   const customSubmit = (data) => {
       console.log(data)
@@ -62,4 +62,4 @@ const Formulario = () => {
   )
 }
 
-export default Formulario;
+export default Formulario; 

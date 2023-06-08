@@ -5,9 +5,9 @@ import WeatherApp from './componentes/weatherapi';
 import Tarjeta from './componentes/tarjetas';
 
 import Footer from './componentes/Footer'
-import {BrowserRouter as Router,} from "react-router-dom"
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap-icons/font/bootstrap-icons.css'
+//import {BrowserRouter as Router,} from "react-router-dom"
+//import 'bootstrap/dist/css/bootstrap.min.css'
+//import 'bootstrap-icons/font/bootstrap-icons.css'
 
 import Acercade from './componentes/Testimonios';
 //import Footer from './componentes/Footer';
@@ -26,7 +26,7 @@ function App() {
           <WeatherApp />
        
    
-    <div className= 'container__ficha'>
+      <div className= 'container__ficha'>
       <h1>INFORMACION UTIL</h1>
       <Tarjeta
       imagen= 'rayosuv.jpg'
@@ -45,27 +45,13 @@ function App() {
       resumen= 'La precipitación varía 50 mm entre el mes más seco y el mes más húmedo. La variación en las temperaturas durante todo el año es 13.7 °C.El valor más bajo de la humedad relativa se mide en diciembre (64.36 %). La humedad relativa es más alta en junio (78.77 %). El mes con la mayor cantidad de días lluviosos es octubre con 10.03 días. El mes con la menor cantidad de días lluviosos es enero con 6.90 días.'/>
     </div>
 
-      </header>
-    
-      <Router>
-    <Footer/>
-    </Router>
-    
-    </div>
-
-       
-        
-
     <Acercade/>
     <Formulario/>
-    {/* <Footer/> */}
-     
-     
-   
+
       </header>
-
+  
+    
   </div>
-
 
   );
 }

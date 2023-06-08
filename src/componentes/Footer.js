@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import '../hojas-estilos/footer.css';
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -59,7 +59,7 @@ function Footer() {
 
 }
 
-export default Footer
+export default Footer */
 
 
 
