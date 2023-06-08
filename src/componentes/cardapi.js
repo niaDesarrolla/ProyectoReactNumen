@@ -1,31 +1,36 @@
 import React from 'react';
-//import '../hojas-estilos/CardApi.css';
+import '../hojas-estilos/CardApi.css';
 import Spinner from './spinner';
 //import cielonubes from '../img/cielonubes.jpg';
 //import 'bootstrap/dist/css/bootstrap.css';
 //import 'bootstrap/dist/js/bootstrap.js';
 
+
 function CardApi({ cityData, loadingData, showData, }) {
+
 
   if (loadingData) {
     return <Spinner />;
   }
 
+
    const { country, region, condition, humidity, cloud, precip_mm, temp_c, feelslike_c, icon } = cityData;
+
 
   return (
     <div className="mt-5">
       {showData === true && (
         <div className="container">
-          <div className="cardCloud mb-3 mx-auto bg-dark text-light">
+          <div className="card mb-3 mx-auto bg-dark text-light">
             <div className="row g-0">
               <div className="col-md-4">
-                <h3 className='card-title'>{cityData.name}</h3>
+           
+                <p className='card-title'>{cityData.name}</p>
                 <p className='card-date'>{cityData.date}</p>
-                <h2 className='card-temp'>{cityData.temp_c}°C</h2>
-                <p className="card-desc"><img src={icon} alt="icon"/>{condition}</p>
+                <p className='card-temp'>{cityData.temp_c}°C</p>
+                {/* <p className="card-desc"><img src={icon} alt="icon"/>{condition}</p> */}
                
-                <p className='card-icon contenedor-imagen'>
+                <p className='contenedor-imagen'>
                   {cityData?.current?.condition?.text.icon}
 
                   <img
@@ -46,17 +51,11 @@ function CardApi({ cityData, loadingData, showData, }) {
                             : './imagenes/cielonubes.png'}
 
 
-                   
                     className="img-fluid rounded float-start"
-                    alt="Weather Icon" />
-                  
+                     alt="Weather Icon"
+                    />
+                   
                 </p>
-
-
-
-
-                    
-
 
           </div>
 
@@ -76,17 +75,17 @@ function CardApi({ cityData, loadingData, showData, }) {
  
                  <div className="row mt-4">
                      <div className="col">
-                          <p>{cityData.localtime}h</p>
+                          <p>{cityData.localdate}h</p>
                           <p className="description"><img src={icon} alt="icon"/>{condition}</p>
                           <p className="temp">{temp_c}ºC</p>
                       </div>
                       <div className="col">
-                          <p>{cityData.localtime}h</p>
+                          <p>{cityData.localdate}h</p>
                           <p className="description"><img src={icon} alt="icon"/>{condition}</p>
                           <p className="temp">{temp_c}ºC</p>
                       </div>
                       <div className="col">
-                          <p>{cityData.localtime}h</p>
+                          <p>{cityData.localdate}h</p>
                           <p className="description"><img src={icon} alt="icon"/>{condition}</p>
                           <p className="temp">{temp_c}ºC</p>
                       </div>
@@ -98,11 +97,12 @@ function CardApi({ cityData, loadingData, showData, }) {
     </div>
         )
                     }
-      {!showData && <h2 className='text-light'>sin datos</h2>}
+      {!showData && <p className='text-light'>sin datos</p>}
 
     </div>
   );
 }
    
     export default CardApi;
-/* hola soy yo */
+
+   /*  ultima actualizacion */

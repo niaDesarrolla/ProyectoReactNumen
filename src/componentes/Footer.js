@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import '../hojas-estilos/footer.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
@@ -53,9 +53,13 @@ function Footer() {
 }
 
 
+export default Footer */
+
+
 
 
 export default Footer
+
 
 
 
