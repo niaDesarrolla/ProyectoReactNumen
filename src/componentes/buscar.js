@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../hojas-estilos/CardApi.css';
 const Barrabuscar = ({ newLocation }) => {
   const [city, setCity] = useState("");
   const onSubmit = (e) => {
@@ -8,20 +9,16 @@ const Barrabuscar = ({ newLocation }) => {
     newLocation(city);
   };
   return (
-    <div className="contenedor">
+    <div className="contenedor-barrabuscar ">
       <form onSubmit={onSubmit}>
-        <div>
-          <input
-            type="text"
-            placeholder="Ingrese la Ciudad"
-            onChange={(e) => setCity(e.target.value)}
-          />
-          <button type="submit" className="boton-buscar">
-            Buscar
-          </button>
+                <div className="barra input-group mb-3 mx-auto">
+                    <input  type="text" className="form-control" placeholder="Ciudad" onChange={(e) =>setCity(e.target.value)}/>
+                    <button className="btn bg-primary barra-input-group-text" type="submit">Buscar</button>
+                </div>
+            </form>
         </div>
-      </form>
-    </div>
   );
 };
 export default Barrabuscar;
+
+// comentoo//
