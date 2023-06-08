@@ -5,12 +5,12 @@ import imagen1 from '../img/1.png';
 import imagen2 from '../img/2.png';
 import imagen3 from '../img/3.png';
 
-
 const imagenes = [
   imagen1,
   imagen2,
   imagen3,
 ];
+
 
 const Micarrusel = () => {
   const [indiceImagen, setIndiceImagen] = React.useState(0);
@@ -22,12 +22,14 @@ const Micarrusel = () => {
   const anteriorImagen = () => {
     setIndiceImagen((prevIndice) => (prevIndice - 1 + imagenes.length) % imagenes.length);
   };
+
+  
   
   return (
     <div className="micarrusel">
       <img src={imagenes[indiceImagen]} alt={`Imagen ${indiceImagen + 1}`} />
-      <button onClick={anteriorImagen}>Anterior</button>
-      <button onClick={siguienteImagen}>Siguiente</button>
+      <button className= "botones" onClick={anteriorImagen}>Anterior</button>
+      <button className= "botones" onClick={siguienteImagen}>Siguiente</button>
     </div>
   );
 };
