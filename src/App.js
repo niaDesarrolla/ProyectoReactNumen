@@ -78,7 +78,7 @@ function App() {
  
     <Footer/>
    
-   </header>
+
 
 
       </header>
