@@ -1,6 +1,9 @@
-import Tarjeta from "./tarjetas"
+import React from 'react';
+import Tarjeta from "./tarjetas";
+import '../hojas-estilos/tarjetas.css';
 
 function Infotarjeta(){
+  return(
 
     <div className= 'container__ficha'>
     <h1 className='titulo-tarjeta'>INFORMACION UTIL</h1>
@@ -20,4 +23,7 @@ function Infotarjeta(){
     titulo= 'Precipitación'
     resumen= 'La precipitación varía 50 mm entre el mes más seco y el mes más húmedo. La variación en las temperaturas durante todo el año es 13.7 °C.El valor más bajo de la humedad relativa se mide en diciembre (64.36 %). La humedad relativa es más alta en junio (78.77 %). El mes con la mayor cantidad de días lluviosos es octubre con 10.03 días. El mes con la menor cantidad de días lluviosos es enero con 6.90 días.'/>
   </div>
+  )
 }
+
+export default Infotarjeta;
