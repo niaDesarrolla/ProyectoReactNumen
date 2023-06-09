@@ -12,12 +12,12 @@ function Tarjeta(props) {
                           src= {require (`../img/${props.imagen}`)}
                           alt={props.altImagen}/>
                         <div className="body__ficha_front">
-                            <h1>{props.titulo}</h1>
+                            <h3 className='titulo-front'>{props.titulo}</h3>
                         </div>
                         </div>
                     <div className="ficha__back">
                         <div className='body__ficha_back'>
-                            <h2>{props.titulo}</h2>
+                            <h2 className='titulo-back'>{props.titulo}</h2>
                             <p>{props.resumen}</p>
                         </div>
                 </div>

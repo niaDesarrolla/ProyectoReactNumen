@@ -49,7 +49,7 @@ function App() {
 
 
       <div className= 'container__ficha'>
-      <h1>INFORMACION UTIL</h1>
+      <h1 className='titulo-tarjeta'>INFORMACION UTIL</h1>
       <Tarjeta
       imagen= 'rayosuv.jpg'
       altImagen= 'foto de rayos uv'
