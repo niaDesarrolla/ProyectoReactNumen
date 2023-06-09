@@ -39,7 +39,7 @@
     padding: 30px 20px;  
   }
   .form-control {    
-   
+    border: none;
     padding-bottom: 20px;
     position: relative;
     padding: 0 40px;
@@ -59,9 +59,9 @@
     padding: 12px;
     width: 100%;    
   }
-  .form-control, input:focus {
+  /* .form-control, input:focus {
     outline: none;
-  }
+  } */
   .form-react button {
    
     display: block;
