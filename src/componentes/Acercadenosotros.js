@@ -1,35 +1,35 @@
-import React from "react";
-import '../hojas-estilos/Acercadenosotros.css'
 
-function Descripcion(props) {
+import React from "react";
+import '../hojas-estilos/Acercadenosotros.css';
+
+function Testimonio(props) {
   return(
    
-    <div className= 'contenedor-descripcion'>
-      
+    <div className= 'contenedor-testimonio'>
+     
              {/* <img
              className='imagen-testimonio'
              src={require(`../img/testimonio-${props.imagen}.jpg`)}
              alt = 'foto de emma'/>  */}
-            <div className='contenedor-texto-descripcion'>
-            <p className='nombre-descripcion'>
-    <strong>{props.skill1}</strong>
+            <div className='contenedor-texto-testimonio'>
+            <p className='nombre-testimonio'>
+    <strong>{props.nombre}</strong>
     <br/>
-    {props.skill2}
-    <br/>
-  </p>
-  <p className='cargo-descripcion'>
-    <strong>{props.skill3}</strong>
-    <br/>
-    {props.skill4}
+    {props.pais}
     <br/>
   </p>
-  <p className='texto-descripcion'>"{props.detalle}"</p>
+  <p className='cargo-testimonio'>
+    <strong>{props.cargo}</strong>
+    <br/>
+    {props.empresa}
+    <br/>
+  </p>
+  <p className='texto-testimonio'>"{props.testimonio}"</p>
              
             </div>
         </div>
        
-
     );  
 }
+export default Testimonio;
 
-export default Descripcion;
