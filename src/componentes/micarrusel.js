@@ -26,11 +26,20 @@ const Micarrusel = () => {
   
   
   return (
-    <div className="micarrusel">
-      <img src={imagenes[indiceImagen]} alt={`Imagen ${indiceImagen + 1}`} />
-      <button className= "botones" onClick={anteriorImagen}>Anterior</button>
-      <button className= "botones" onClick={siguienteImagen}>Siguiente</button>
+    <div  class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+      <div className="carousel-item active">
+      <img className="d-block w-100" src={imagenes[indiceImagen]} alt={`Imagen ${indiceImagen + 1}`} />
+      
+      <button className= "carousel-control-prev" href="#carouselExampleIndicators" role="button" onClick={anteriorImagen}>Anterior</button>
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <button class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" onClick={siguienteImagen}>Siguiente</button>
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </div>
+    </div>
+    </div>
+  
+
   );
 };
 

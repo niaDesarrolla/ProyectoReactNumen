@@ -14,7 +14,7 @@ const Cabecera = () => {
     <header className="Cabecera">
       <h1 className="Cabecera-h1">
         <a href="#" className="Cabecera-a">
-         <img className='logoapi rounded float-start'src={require("../img/logo1.png")}/>
+         <img className='logoapi rounded float-start'src={require("../img/logo1.png")} />
         </a>
       </h1>
 
