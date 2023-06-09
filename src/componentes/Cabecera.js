@@ -14,7 +14,7 @@ const Cabecera = () => {
     <header className="Cabecera">
       <h1 className="Cabecera-h1">
         <a href="#" className="Cabecera-a">
-          Sky Alert
+         <img className='logoapi rounded float-start'src={require("../img/logo1.png")}/>
         </a>
       </h1>
 
@@ -30,7 +30,7 @@ const Cabecera = () => {
           <ul className="Cabecera-ul">
             <li className="Cabecera-li"><a href="#" className="Cabecera-a">Inicio</a></li>
             <li className="Cabecera-li"><a href="#" className="Cabecera-a">Sobre nosotros</a></li>
-            <li className="Cabecera-li"><a href="#" className="Cabecera-a">Noticias</a></li>
+            <li className="Cabecera-li"><a href="#" className="Cabecera-a">Pronóstico clima</a></li>
           </ul>
         </nav>
 

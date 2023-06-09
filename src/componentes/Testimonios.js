@@ -11,7 +11,7 @@ function Acercade() {
     <br/>
 </div>
 <div class="mt-5 text-center">
-    {/* <img class="img-fluid" src= {`../img/testimonio-datos.jpg`} alt="equipo"/> */}
+    <img class="img-fluid" src={require("../img/testimonio-datos.jpg")} alt="equipo"/> 
 </div>
       
           <div className="contenedor-descripcion">
@@ -29,7 +29,7 @@ function Acercade() {
                    <Descripcion 
                       skill1='Supercomputación y procesamiento de datos.'
                       skill2='Especialistas en TI.'
-                    //   imagen='sara' 
+                        src={require("../img/testimonio-emma.jpg")} 
                       skill3='15 petabytes de datos meteorológicos.'
                       skill4='Pronósticos en tiempo real.'
                       detalle='Sky Alert comprende tanto meteorólogos como especialistas en TI, lo que nos permite ofrecer datos meteorológicos sin precedentes. Hoy, nuestra base de datos contiene más de 15 petabytes de datos meteorológicos y crece cada día. Hacer accesibles cantidades tan grandes de datos está asociado con grandes desafíos. Con nuestro sofisticado sistema de almacenamiento en caché en segundo plano, Meteocache, almacenamos grandes cantidades de observaciones, lo que permite que nuestra API meteorológica vuelva a calcular los pronósticos en tiempo real utilizando la información atmosférica más reciente. Nuestro sistema Meteocache hace coincidir los datos en el tiempo y el espacio, lo que garantiza que incluso los grandes conjuntos de datos se puedan consultar de manera eficiente y rápida en cualquier formato.
@@ -37,7 +37,7 @@ function Acercade() {
                    <Descripcion 
                       skill1='Pronósticos hiperlocales y de alta precisión.'
                       skill2='Modelo de terreno digital de la NASA.'
-                      /* imagen='emma' */
+                      src={require("../img/testimonio-sara.jpg")} 
                       skill3='Pronósticos hiperlocales a nivel mundial.'
                       skill4='Resolución de 1 km.'
                       detalle='El modelo meteorológico EURO1k de SkyAlert cuenta con una resolución única de 1 km, lo que proporciona pronósticos meteorológicos muy precisos en toda Europa, adaptados a varios sectores. Además, nuestra tecnología meteorológica API emplea una reducción de escala de 90 metros utilizando el modelo de terreno digital de la NASA, lo que nos permite proporcionar pronósticos hiperlocales a nivel mundial.'

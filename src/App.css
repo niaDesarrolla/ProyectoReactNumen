@@ -1,5 +1,6 @@
 
 h1 {
+	
 	max-width: 940px;
 	font-size: 2.5em;
 	font-family: Lato, sans-serif;
@@ -10,6 +11,7 @@ h1 {
 }
 
 .Acercadenosotros {
+	margin-top: 40px;
 	min-height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
@@ -17,7 +19,7 @@ h1 {
 	justify-content: center;
 	text-align: center;
 }
-.contenedor-testimonio {
+.contenedor-descripcion {
 	min-height: 600px;
 	display: flex;
 	flex-wrap: wrap;
