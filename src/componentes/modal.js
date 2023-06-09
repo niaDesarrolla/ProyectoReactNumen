@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../hojas-estilos/modal.css'; 
 
-const Modal = () => {
+const MiModal = () => {
   const [modalVisible, setModalVisible] = useState(false);
 
   const openModal = () => {
@@ -12,23 +12,31 @@ const Modal = () => {
     setModalVisible(false);
   };
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      openModal(); // Abrir el modal después de 3 segundos 
+    }, 3000);
+
+    return () => {
+      clearTimeout(timer); 
+    };
+  }, []);
   return (
     <div>
 
-      <button onClick={openModal}>Abrir Modal</button>
+      {/* <button onClick={openModal}>Abrir Modal</button> */}
 
       {modalVisible && (
-        <div className="modal">
-          <div className="modal-content">
+        <div className="modal card mx-auto text-light">
+          <p className='titulo-emergente'>Bienvenidos a Sky Alert</p>
             <span className="close" onClick={closeModal}>
               &times;
             </span>
-            <h2>Bienvenidos a nuestra app de el clima</h2>
-          </div>
-        </div>
+            </div>
+        
       )}
     </div>
   );
 };
 
-export default Modal;
+export default MiModal;
