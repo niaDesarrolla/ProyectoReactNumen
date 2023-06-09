@@ -1,8 +1,8 @@
 .Cabecera{
     width: 100%;
-    background:#b1a5c9;
+    background:#3a4d71;
     padding: 1em;
-    display: flex;
+    display: inline-block;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
@@ -13,38 +13,50 @@
 }
 
 .Cabecera-h1{
-    font-weight:lighter;
+    width: 30px;
+    height: 60px;
+    
+}
+
+.logoapi{
+    width: 180px;
+    
+
 }
 
 
-.Cabecera-h1:hover {
-    transform:scale(1.5);
-    transition: 1s;
-}
+
 
 .Cabecera-a{
     text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
 }
+
+
 
 .Cabecera-button{
     display: none;
     cursor: pointer;
+
 }
 
 .Cabecera-ul li:hover{
-    transform:scale(1.5);
+
+    transform:scale(1.2);
+    transition: .5s;
+    text-decoration: underline;
+    transform:scale(1.2);
     transition: .5s;
 }
 
 .Cabecera-svg{
     width: 2em;
     height: 2em;
+    
 }
 
-/*
-.Cabecera-nav{
-}
-*/
 .Cabecera-ul{
     display: flex;
     flex-flow: row nowrap;
@@ -53,12 +65,13 @@
 }
 
 .Cabecera-li{
-    margin: 0 .5em;
+    margin: 1em;
     list-style: none;
 
 }
 
 @media screen and (max-width:480px){
+    .logoapi{width: 180px;}
     .Cabecera-button{
         display: flex;
     }
