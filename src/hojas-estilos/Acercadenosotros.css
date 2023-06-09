@@ -1,6 +1,6 @@
 @media (max-width:600px){
     
-.contenedor-descripcion {
+.contenedor-testimonio {
     width: 1170px;
     height: 368px;
     margin: 10px 10px 50px;
@@ -12,12 +12,12 @@
     border-radius: 30px, 30px, 30px, 30px;
     }
 }
-    .imagen-descripcion {
+    .imagen-testimonio {
         height: 100%;
         width: auto;
     }
     
-    .contenedor-texto-descripcion {
+    .contenedor-texto-testimonio {
      
      padding: 40px;
      font-family: lato, sans-serif;
