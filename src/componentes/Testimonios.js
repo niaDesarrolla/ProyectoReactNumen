@@ -4,7 +4,7 @@ import '../hojas-estilos/Acercadenosotros.css';
 
 function Acercade() {
     return (
-<div className='Acercadenosotros'>
+<div className='Acercadenosotros' ID="acercadenosotros">
      
 <div class="w-75 m-auto text-center" id="equipo" >
     <p class="mb-5 fs-2 border-top border-3"> Equipo de Profesionales
