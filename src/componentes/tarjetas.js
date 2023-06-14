@@ -27,4 +27,4 @@ function Tarjeta(props) {
 );
 }
 
-export default Tarjeta
+export default Tarjeta;

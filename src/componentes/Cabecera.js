@@ -29,8 +29,8 @@ const Cabecera = () => {
         <nav className={ `Cabecera-nav ${ menu ? 'isActive' : ''}` }>
           <ul className="Cabecera-ul">
             <li className="Cabecera-li"><a href="#" className="Cabecera-a">Inicio</a></li>
-            <li className="Cabecera-li"><a href="#" className="Cabecera-a">Sobre nosotros</a></li>
-            <li className="Cabecera-li"><a href="#" className="Cabecera-a">Pronóstico clima</a></li>
+            <li className="Cabecera-li"><a href="acercadenosotros" className="Cabecera-a">Sobre nosotros</a></li>
+            <li className="Cabecera-li"><a href="pronosticoclima" className="Cabecera-a">Pronóstico clima</a></li>
           </ul>
         </nav>
 

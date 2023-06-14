@@ -55,3 +55,9 @@ font-size: 20px;
 background-color: #3A4d71;
 }
 
+.barra{
+    border:2px solid #3a4d71;
+    border-radius: 10px;
+
+}
+

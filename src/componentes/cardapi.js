@@ -18,7 +18,7 @@ function CardApi({ cityData, loadingData, showData, }) {
 
 
   return (
-    <div className="mt-5">
+    <div className="mt-5" ID="pronosticoclima">
       {showData === true && (
         <div className="containerapi">
           <div className="card mb-3 mx-auto text-light">

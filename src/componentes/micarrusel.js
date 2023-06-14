@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, {  useEffect } from 'react';
 import '../hojas-estilos/micarrusel.css';
 
 import imagen1 from '../img/1.png';
@@ -23,23 +24,29 @@ const Micarrusel = () => {
     setIndiceImagen((prevIndice) => (prevIndice - 1 + imagenes.length) % imagenes.length);
   };
 
+  useEffect(() => {
+    const intervalo = setInterval(siguienteImagen, 5000); 
+
+    return () => {
+      clearInterval(intervalo); 
+    };
+  }, []);
   
   
   return (
-    <div  class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-      <div className="carousel-item active">
-      <img className="d-block w-100" src={imagenes[indiceImagen]} alt={`Imagen ${indiceImagen + 1}`} />
-      
-      <button className= "carousel-control-prev" href="#carouselExampleIndicators" role="button" onClick={anteriorImagen}>Anterior</button>
-     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <button class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" onClick={siguienteImagen}>Siguiente</button>
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <div className="carousel slide" data-ride="carousel">
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <img className="d-block w-100" src={imagenes[indiceImagen]} alt={`Imagen ${indiceImagen + 1}`} />
+        </div>
+      </div>
+      <button className="carousel-control-prev" onClick={anteriorImagen}>
+        Anterior
+      </button>
+      <button className="carousel-control-next" onClick={siguienteImagen}>
+        Siguiente
+      </button>
     </div>
-    </div>
-    </div>
-  
-
   );
 };
 
