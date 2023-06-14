@@ -17,9 +17,9 @@ function Acercade() {
 
              <div className="contenedor-principal">
             <hr/>
-              <p className="text-primary" style={{ fontSize: '60px', color: 'MidnightBlue', fontWeight: 'bold'}}>Lo que hacemos
+              <p className="text-primary" style={{ fontSize: '60px', color: 'MidnightBlue', fontWeight: 'bold', fontFamily: 'sans-serif' }}>Lo Que Hacemos
               </p>
-              <hr />
+              
                   <Testimonio
                       nombre='Recopilación de datos innovadores.'
                       pais='Datos satelitales.'
@@ -44,6 +44,7 @@ function Acercade() {
                       empresa='Resolución de 1 km.'
                       testimonio='El modelo meteorológico EURO1k de SkyAlert cuenta con una resolución única de 1 km, lo que proporciona pronósticos meteorológicos muy precisos en toda Europa, adaptados a varios sectores. Además, nuestra tecnología meteorológica API emplea una reducción de escala de 90 metros utilizando el modelo de terreno digital de la NASA, lo que nos permite proporcionar pronósticos hiperlocales a nivel mundial.'
                        />
+                         <hr />
           </div>
       </div>
     

@@ -1,65 +1,47 @@
-@media (max-width:600px){
-    
 .contenedor-testimonio {
-    width: 1170px;
-    height: 380px;
-    margin: 10px 10px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #9fb8d9;
-    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
-    border-radius: 30px, 30px, 30px, 30px;
-   
-    }
+  margin: 15px ;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  background: linear-gradient(150deg,#b1a5c9, #eff4f4,#9fb8d9);
+  box-shadow: 5px 5px 10px #565656a5, -5px -5px 10px #8a8a8a;
+  border-radius: 15px;
+ 
 }
-    .imagen-testimonio {
-        height: 100%;
-        width: auto;
-    }
-    
-    .contenedor-texto-testimonio {
-     
-     padding: 40px;
-     font-family: lato, sans-serif;
-     font-weight: 400;
-     line-height: 1.5rem;
-     text-align: justify;
-    }
-    
-    
-    .nombre-testimonio {
-        font-size: 1.3rem;
-    }
-    
-    .cargo-testimonio {
-        font-size: 1.3rem;
-        margin-top: 15px;
-        padding-bottom: 30px;
-    }
-    
-    .texto-testimmonio {
-        font-size: 1.1rem;
-        text-align: justify;
 
-    }
+.imagen-testimonio {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 5px;
+   border-radius: 10px ;
+ 
+}
 
-    .text-primary {
-      color: #3a4d71;
-    }
+.contenedor-texto-testimonio {
+  padding: 15px;
+}
 
-@media (min-width:600px){
+.nombre-testimonio {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
 
-    .contenedor-testimonio {
-        width: 1170px;
-        height: 368px;
-        margin: 10px 10px 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #9fb8d9;
-        box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
-        border-radius: 30px, 30px, 30px, 30px;
-        }
+.cargo-testimonio {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
 
+.texto-testimonio {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .contenedor-testimonio {
+    flex-direction: column;
+  }
+
+  .imagen-testimonio {
+    margin-bottom: 20px;
+  }
 }
