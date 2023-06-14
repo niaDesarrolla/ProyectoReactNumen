@@ -9,7 +9,7 @@ const Barrabuscar = ({ newLocation }) => {
     newLocation(city);
   };
   return (
-    <div className="contenedor-barrabuscar ">
+    <div className="contenedor-barrabuscar " ID="pronosticoclima">
       <form onSubmit={onSubmit}>
                 <div className="barra input-group mb-3 mx-auto">
                     <input  type="text" className="form-control" placeholder="Ciudad" onChange={(e) =>setCity(e.target.value)}/>
