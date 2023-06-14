@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <header className="App-header">
     
-        <MiModal/>
+        {/* <MiModal/> */}
        <Cabecera />
       <Micarrusel/>  
       <WeatherApp />
