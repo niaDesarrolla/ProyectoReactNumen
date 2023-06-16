@@ -59,14 +59,14 @@ function CardApi({ cityData, loadingData, showData, }) {
           </div>
 
               <div className="col-md-4">
-                <div className="card-body text-start mt-2 text-dark">
-                  <p>País: {country}</p>
-                  <p>Región: {region}</p>
-                  <p>Temperatura: {temp_c}°C</p>
-                  <p>Sensación Térmica:{feelslike_c}°</p>
-                  <p>Humedad: {humidity}%</p>
-                  <p>Nubosidad: {cloud}</p>
-                  <p>Precipitación: {precip_mm}</p>
+                <div className="datoscardapi card-body text-start mt-2 text-dark">
+                  <p><span className='fw-bold '>País:</span> {country}</p>
+                  <p><span className='fw-bold'>Región:</span> {region}</p>
+                  <p><span className='fw-bold'>Temperatura:</span> {temp_c}°C</p>
+                  <p><span className='fw-bold'>Sensación Térmica:</span>{feelslike_c}°</p>
+                  <p><span className='fw-bold'>Humedad: </span>{humidity}%</p>
+                  <p><span className='fw-bold'>Nubosidad:</span> {cloud}</p>
+                  <p><span className='fw-bold'>Precipitación:</span> {precip_mm}</p>
                 </div>
               </div>
              
