@@ -27,7 +27,7 @@ function CardApi({ cityData, loadingData, showData, }) {
               <p className='card-titleapi'>{cityData.name}</p>
                 <p className='card-dateapi'>{cityData.date} </p>
                 <p className='card-tempapi'>{cityData.temp_c}°C</p>
-                <p className="card-conditonapi "><img src={icon} alt="icon"/>{condition}</p> 
+                <p className='card-conditonapi'><img src={icon} alt="icon"/>{condition}</p> 
                
                 <p className='contenedor-imagenapi'>
                   {cityData?.current?.condition?.text.icon}
