@@ -1,4 +1,4 @@
-DEMO https://sky-alert-app-clima.vercel.app/
+DEMO https://sky-alert-weather-app.vercel.app/
 
 
 # Getting Started with Create React App
