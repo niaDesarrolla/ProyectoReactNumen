@@ -6,7 +6,7 @@ import axios from 'axios';
 const WeatherApp = () => {
 
   const apiKey = 'f70f771f8fd64f27822214051231305';
-  const urlWeather = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=`;
+  const urlWeather = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=`;
   const urlCity = '&aqi=no';
   
   const [cityData, setCityData] = useState(null); // almacena datos de la ciudad
