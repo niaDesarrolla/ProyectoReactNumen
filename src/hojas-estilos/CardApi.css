@@ -23,12 +23,30 @@ position: absolute;
     font-size: 30px;
   
 }
+@keyframes moveSideways {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .card-conditonapi {
+    position: absolute;
+    padding-left: 20px;
+    margin-top: 130px;
+    font-size: 20px;
+    animation: moveSideways 3s infinite;
+  }
 
-.card-conditonapi{ position: absolute;
-padding-left: 20px;
-margin-top: 130px;
-font-size: 20px;
 
+.col-md-4{
+    color: #3A4d71;
+    font-family: sans-serif;
 }
 
 /* */
@@ -61,3 +79,14 @@ background-color: #3A4d71;
 
 }
 
+@media screen and (max-width: 767px) {
+
+    .col-md-7 {
+        width: 100%; 
+      }
+      
+      .card {
+        max-width: 400px; 
+        margin: 0 auto; 
+      }
+    }
