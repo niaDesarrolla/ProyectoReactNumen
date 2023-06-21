@@ -18,7 +18,7 @@ const Formulario = () => {
     return (
         <form>
       <div className="formulario rounded mb-3 mx-auto "> 
-          <h2>Formulario de Suscripción</h2>
+          <h2>¡Suscríbete!</h2>
           <form onSubmit={ handleSubmit(customSubmit) } className='form-react'>
               <p className='form-control'>
                   <label>Nombre</label>

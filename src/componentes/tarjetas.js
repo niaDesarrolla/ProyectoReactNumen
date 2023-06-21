@@ -2,7 +2,6 @@ import React from 'react';
 import '../hojas-estilos/tarjetas.css';
 /* import 'react-card-flip'; */
 
-
 function Tarjeta(props) {
     return(
            <div className="ficha__father">

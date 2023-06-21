@@ -68,10 +68,7 @@ const WeatherApp = () => {
    useEffect(() => {
     updateCityData();
   }, []);
-
-
-
-    
+ 
   return (
     <div>
        <Barrabuscar newLocation={getLocation}/> 

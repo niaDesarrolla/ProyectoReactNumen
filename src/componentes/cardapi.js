@@ -1,21 +1,14 @@
 import React from 'react';
 import '../hojas-estilos/CardApi.css';
 import Spinner from './spinner';
-//import cielonubes from '../img/cielonubes.jpg';
-//import 'bootstrap/dist/css/bootstrap.css';
-//import 'bootstrap/dist/js/bootstrap.js';
-
 
 function CardApi({ cityData, loadingData, showData, }) {
-
 
   if (loadingData) {
     return <Spinner />;
   }
 
-
    const { country, region, condition, humidity, cloud, precip_mm, temp_c, feelslike_c, icon } = cityData;
-
 
   return (
     <div className="mt-5" >
@@ -35,11 +28,11 @@ function CardApi({ cityData, loadingData, showData, }) {
                   <img
 
                     src={
-                      cityData?.temp_c >= 25 && cityData?.cloud === 'baja'
+                      cityData?.temp_c >= 25 || cityData?.cloud <= 30
                       ? './imagenes/soleado.png'
                       : cityData?.temp_c >= 15 ||
                         cityData?.temp_c <= 24 ||
-                        cityData?.cloud === 'alta'
+                        cityData?.cloud >= 70
                         ? './imagenes/nublado.png'
                         : cityData?.temp_c >= 10 ||
                           cityData?.precip_mm >= 10
@@ -50,7 +43,7 @@ function CardApi({ cityData, loadingData, showData, }) {
                             : './imagenes/cielonubes.png'}
 
 
-                    className="img-fluid rounded float-start"
+                    className="img-fluid  float-start" style={{ borderRadius: '10px 0px 0px 10px',  height: '100%'}}
                      alt="Weather Icon"
                     />
                    
@@ -69,14 +62,11 @@ function CardApi({ cityData, loadingData, showData, }) {
                   <p><span className='fw-bold'>Precipitación:</span> {precip_mm}</p>
                 </div>
               </div>
-             
-             
-                                         
+                                   
                   </div>
           </div>
         </div>
 
-   
         )
                     }
       {!showData && <p className='text-light'>sin datos</p>}
@@ -86,3 +76,4 @@ function CardApi({ cityData, loadingData, showData, }) {
                   }
    
     export default CardApi;
+    

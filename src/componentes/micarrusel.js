@@ -12,7 +12,6 @@ const imagenes = [
   imagen3,
 ];
 
-
 const Micarrusel = () => {
   const [indiceImagen, setIndiceImagen] = React.useState(0);
   

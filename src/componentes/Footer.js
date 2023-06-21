@@ -1,8 +1,7 @@
- import React from "react";
+import React from "react";
 import '../hojas-estilos/footer.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-
 
 function Footer() {
     return (
@@ -15,7 +14,7 @@ function Footer() {
                             alt="logo-f" />
                     </div>
                     <div className="box__footer">
-                    <h2>Descargate la App</h2>
+                    <h2>Descárgate la App</h2>
                     <a href="https://play.google.com/store/" target="_blank" rel="noreferrer"><i className="bi bi-google-play">Google Play</i></a>
                     <a href="https://apps.apple.com/" target="_blank" rel="noreferrer"><i className="bi bi-apple">App Store</i></a>
                 </div>
@@ -44,7 +43,6 @@ function Footer() {
     );
 
 }
-
 
 export default Footer 
 

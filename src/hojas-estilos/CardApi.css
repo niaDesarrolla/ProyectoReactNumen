@@ -1,10 +1,10 @@
+
 .card-titleapi{
     
     position: absolute;
     padding: 30px;
     font-size: 50px ;
     
-  
 }
 
 .card-dateapi{
@@ -17,7 +17,7 @@
 
 
 .card-tempapi{
-position: absolute;
+    position: absolute;
     padding-left: 20px;
     margin-top:100px;
     font-size: 30px;
@@ -55,7 +55,7 @@ position: absolute;
 background: rgba(158, 222, 236, 0.74);
 background: linear-gradient(90deg, rgba(158, 222, 236, 0.637) 0%, rgba(109, 170, 240, 0.699) 100%);
 box-shadow: 5px 5px 10px 10px rgba(128, 128, 128, 0.514);
-border-radius: 6px;
+border-radius: 10px;
 text-align: center;
 
 
@@ -90,3 +90,5 @@ background-color: #3A4d71;
         margin: 0 auto; 
       }
     }
+
+   
